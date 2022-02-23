@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: black;
+    border: white 2px solid;
+}
+.button{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: none;
+    margin: 2px;
+    font-size: 30px;
+    font-weight: 250;
+}
+.ceroButton {
+    width: 47.5%;
+    text-align: left;
+    padding-left: 25px;
+}
+.lightButton {
+    background-color: #a6a6a6;
+    color: black;
+}
+.darkButton {
+    background-color: #333333;
+    color: white;
+}
+.acentButton {
+    background-color: #ff9501;
+    color: white;
+}
+#visor{
+    border: none;
+    width: 250px;
+    height: 120px;
+    font-size: 50px;
+    text-align: right;
+    background-color: black;
+    color: white;
+    font-weight: 200;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
