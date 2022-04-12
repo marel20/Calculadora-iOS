@@ -2,16 +2,16 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-color: black;
-}
 section{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100vh;
     background-color: black;
     border: white 2px solid;
+}
+section > .filas{
+    width: 100%;
+    height: auto;
 }
 .button{
     width: 60px;
@@ -23,7 +23,7 @@ section{
     font-weight: 250;
 }
 .ceroButton {
-    width: 47.5%;
+    width: 128px;
     text-align: left;
     padding-left: 25px;
 }
@@ -51,10 +51,4 @@ section{
 }
 ::-webkit-input-placeholder {
     color: white;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }

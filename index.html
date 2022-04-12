@@ -5,46 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mdb.min.css">
     <title>Calculadora</title>
 </head>
 <body>
-    
-    <section>
-        <article>
-            <input type="text" value="" id="visor" placeholder="0"/>
-        </article>
-        <article id="numeros">
-            <div class="fila1 row">
-                <input class="button lightButton" type="button" id="borrar" value="AC" onclick="borrar()" />
-                <input class="button lightButton" type="button"  value="+/-" onclick="Operador('+/-')" /> 
-                <input class="button lightButton" type="button"  value="%" onclick="Operador('%')" /> 
-                <input class="button acentButton" type="button"  value="/" onclick="Operador('/')" />
-            </div>
-            <div class="fila2 row">
-                <input class="button darkButton" type="button" value="7" onclick="marcar(7)" />
-                <input class="button darkButton" type="button" value="8" onclick="marcar(8)" />
-                <input class="button darkButton" type="button" value="9" onclick="marcar(9)" />
-                <input class="button acentButton" type="button"  value="x" onclick="Operador('x')" />
-            </div>
-            <div class="fila3">
-                <input class="button darkButton" type="button" value="4" onclick="marcar(4)" />
-                <input class="button darkButton" type="button" value="5" onclick="marcar(5)" />
-                <input class="button darkButton" type="button" value="6" onclick="marcar(6)" />
-                <input class="button acentButton" type="button"  value="-" onclick="Operador('-')" />
-            </div>
-            <div class="fila4">
-                <input class="button darkButton" type="button" value="1" onclick="marcar(1)" />
-                <input class="button darkButton" type="button" value="2" onclick="marcar(2)" />
-                <input class="button darkButton" type="button" value="3" onclick="marcar(3)" />
-                <input class="button acentButton" type="button"  value="+" onclick="Operador('+')" />
-            </div>
-            <div class="fila5">
-                <input class="button ceroButton darkButton" type="button" value="0" onclick="marcar(0)" />
-                <input class="button darkButton" type="button"  value="," onclick="marcar('.')" /> 
-                <input class="button acentButton" type="button" id="igual" value="=" onclick="igual()" />
-            </div>
-        </article>
-    </section>
+    <div class="container-fluid">
+        <section>
+            <article>
+                <input type="text" value="" id="visor" placeholder="0"/>
+            </article>
+            <article id="numeros" class="filas">
+                <div>
+                    <input class="button lightButton" type="button" id="borrar" value="AC" onclick="borrar()" />
+                    <input class="button lightButton" type="button"  value="+/-" onclick="Operador('+/-')" /> 
+                    <input class="button lightButton" type="button"  value="%" onclick="Operador('%')" /> 
+                    <input class="button acentButton" type="button"  value="/" onclick="Operador('/')" />
+                </div>
+                <div>
+                    <input class="button darkButton" type="button" value="7" onclick="marcar(7)" />
+                    <input class="button darkButton" type="button" value="8" onclick="marcar(8)" />
+                    <input class="button darkButton" type="button" value="9" onclick="marcar(9)" />
+                    <input class="button acentButton" type="button"  value="x" onclick="Operador('x')" />
+                </div>
+                <div>
+                    <input class="button darkButton" type="button" value="4" onclick="marcar(4)" />
+                    <input class="button darkButton" type="button" value="5" onclick="marcar(5)" />
+                    <input class="button darkButton" type="button" value="6" onclick="marcar(6)" />
+                    <input class="button acentButton" type="button"  value="-" onclick="Operador('-')" />
+                </div>
+                <div>
+                    <input class="button darkButton" type="button" value="1" onclick="marcar(1)" />
+                    <input class="button darkButton" type="button" value="2" onclick="marcar(2)" />
+                    <input class="button darkButton" type="button" value="3" onclick="marcar(3)" />
+                    <input class="button acentButton" type="button"  value="+" onclick="Operador('+')" />
+                </div>
+                <div>
+                    <input class="button ceroButton darkButton" type="button" value="0" onclick="marcar(0)" />
+                    <input class="button darkButton" type="button"  value="," onclick="marcar('.')" /> 
+                    <input class="button acentButton" type="button" id="igual" value="=" onclick="igual()" />
+                </div>
+            </article>
+        </section>
+    </div>
 
 
 <script>
